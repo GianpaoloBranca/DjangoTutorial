@@ -18,7 +18,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Django launcher</LaunchProvider>
     <DjangoSettingsModule>DjangoTutorial.settings</DjangoSettingsModule>
-    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <WebBrowserUrl>http://localhost/polls</WebBrowserUrl>
     <OutputPath>.</OutputPath>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
   </PropertyGroup>
@@ -48,7 +48,8 @@
     <Compile Include="polls\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="polls\templates\index.html" />
+    <Content Include="polls\templates\polls\index.html" />
+    <Content Include="polls\templates\polls\detail.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +57,7 @@
     <Folder Include="polls\" />
     <Folder Include="polls\migrations\" />
     <Folder Include="polls\templates\" />
+    <Folder Include="polls\templates\polls\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="TutorialEnv\">
